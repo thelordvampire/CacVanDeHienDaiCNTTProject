@@ -40,7 +40,7 @@ public class SettingsActivity extends PreferenceActivity implements
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        Log.i("Kissapplication", "onSharedPreferenceChanged SettingActivity");
+        Log.i("kisslaucher", "onSharedPreferenceChanged SettingActivity");
 
         if (requireRestartSettings.contains(key)) {
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
@@ -75,7 +75,7 @@ public class SettingsActivity extends PreferenceActivity implements
     }
 
     private void fixSummaries(SharedPreferences prefs) {
-        Log.i("Kissapplication", "fixSummaries SettingActivity");
+        Log.i("kisslaucher", "fixSummaries SettingActivity");
         int historyLength = KissApplication.getDataHandler(this).getHistoryLength(this);
         if (historyLength > 5) {
             findPreference("reset").setSummary(getString(R.string.reset_desc) + " (" + historyLength + " items)");

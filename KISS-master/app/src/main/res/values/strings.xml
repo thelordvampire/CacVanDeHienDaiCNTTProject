@@ -15,7 +15,7 @@
     <string name="title_advanced">Cài đặt nâng cao</string>
     <string name="menu_settings">Cài đặt thiết bị</string>
     <string name="menu_preferences">Cài đặt KISS</string>
-    <string name="no_favorites">Belum ada favorit. Gunakan aplikasi dan favorit akan muncul.</string>
+    <string name="no_favorites">Chưa có ứng dụng yêu thích. Sử dụng các ứng dụng trong danh sách để các ứng dụng yêu thích xuất hiện</string>
 
     <string name="ui_empty_1">Bắt đầu tìm kiếm</string>
     <string name="ui_empty_1_sub">Các ứng dụng, danh bạ, cài đặt</string>
@@ -88,7 +88,7 @@
     <string name="toggle_sync">Synchronization</string>
     <string name="menu_wallpaper">Thay hình nền</string>
     <string name="application_not_found">Whoops… unable to launch that app.</string>
-    <string name="history_erased">History erased.</string>
+    <string name="history_erased">Đã xóa lịch sử sử dụng.</string>
 
     <string name="removed_item">Xóa</string>
     <string name="menu_remove">Xóa khỏi lịch sử</string>

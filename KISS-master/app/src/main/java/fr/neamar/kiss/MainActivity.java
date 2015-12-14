@@ -44,6 +44,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import fr.neamar.kiss.adapter.RecordAdapter;
+import fr.neamar.kiss.db.DB;
 import fr.neamar.kiss.pojo.Pojo;
 import fr.neamar.kiss.preference.ResetPreference;
 import fr.neamar.kiss.result.Result;
@@ -422,7 +423,8 @@ public class MainActivity extends ListActivity implements QueryInterface {
     public void onClearHistoryButtonClicked(View clearHistoryButton){
         Log.i(K, "onClearHistoryButtonClicked MainActivity");
 //        ResetPreference resetPreference = new ResetPreference(this, );
-//        KissApplication.resetDataHandler(this);
+        getApplicationContext().deleteDatabase(DB.DB_NAME);
+        updateRecords("");
     }
     /**
      * Display menu, on short or long press.
