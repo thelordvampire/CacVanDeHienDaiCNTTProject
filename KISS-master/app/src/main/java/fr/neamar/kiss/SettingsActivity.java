@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
+import android.util.Log;
 
 public class SettingsActivity extends PreferenceActivity implements
         SharedPreferences.OnSharedPreferenceChangeListener {
@@ -18,6 +19,7 @@ public class SettingsActivity extends PreferenceActivity implements
     @SuppressWarnings("deprecation")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i("kisslaucher", "onCreate SettingsActivity");
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
         String theme = prefs.getString("theme", "light");
         if (theme.contains("dark")) {
@@ -38,6 +40,7 @@ public class SettingsActivity extends PreferenceActivity implements
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+        Log.i("Kissapplication", "onSharedPreferenceChanged SettingActivity");
 
         if (requireRestartSettings.contains(key)) {
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
@@ -72,6 +75,7 @@ public class SettingsActivity extends PreferenceActivity implements
     }
 
     private void fixSummaries(SharedPreferences prefs) {
+        Log.i("Kissapplication", "fixSummaries SettingActivity");
         int historyLength = KissApplication.getDataHandler(this).getHistoryLength(this);
         if (historyLength > 5) {
             findPreference("reset").setSummary(getString(R.string.reset_desc) + " (" + historyLength + " items)");

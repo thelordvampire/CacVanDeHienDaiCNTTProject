@@ -2,69 +2,69 @@
 <resources>
 
     <string name="app_name">KISS launcher</string>
-    <string name="activity_setting">Pengaturan KISS</string>
+    <string name="activity_setting">Cài đặt KISS</string>
     <string name="ui_search_hint">Nhập tên ứng dụng bạn muốn tìm</string>
-    <string name="ui_item_search">Pencarian untuk “%s”</string>
-    <string name="ui_item_phone">Hubungi “%s”</string>
-    <string name="ui_item_contact_hint_message">Pesan</string>
-    <string name="ui_item_contact_hint_call">Hubungi</string>
+    <string name="ui_item_search">Tìm kiếm “%s”</string>
+    <string name="ui_item_phone">Gọi “%s”</string>
+    <string name="ui_item_contact_hint_message">Nhắn Tin</string>
+    <string name="ui_item_contact_hint_call">Gọi</string>
 
-    <string name="title_ui">Antarmuka Pengguna</string>
-    <string name="title_history">Histori</string>
-    <string name="title_providers">Pemilihan Provider</string>
-    <string name="title_advanced">Pengaturan Lanjut</string>
-    <string name="menu_settings">Pengaturan Perangkat</string>
-    <string name="menu_preferences">Pengaturan KISS</string>
+    <string name="title_ui">Giao diện người dùng</string>
+    <string name="title_history">Lịch sử</string>
+    <string name="title_providers">Lựa chọn Provider</string>
+    <string name="title_advanced">Cài đặt nâng cao</string>
+    <string name="menu_settings">Cài đặt thiết bị</string>
+    <string name="menu_preferences">Cài đặt KISS</string>
     <string name="no_favorites">Belum ada favorit. Gunakan aplikasi dan favorit akan muncul.</string>
 
-    <string name="ui_empty_1">Mulai mencari sesuatu</string>
-    <string name="ui_empty_1_sub">Aplikasi, kontak, pengaturan, …</string>
-    <string name="ui_empty_2">"Selalu melihat histori "</string>
-    <string name="ui_empty_2_sub">Untuk akses cepat</string>
-    <string name="ui_empty_3">Akses cepat untuk aplikasi sering digunakan</string>
-    <string name="ui_empty_3_sub">Launcher KISS belajar dari kebiasan anda</string>
+    <string name="ui_empty_1">Bắt đầu tìm kiếm</string>
+    <string name="ui_empty_1_sub">Các ứng dụng, danh bạ, cài đặt</string>
+    <string name="ui_empty_2">"Lịch sử sử dụng "</string>
+    <string name="ui_empty_2_sub">Truy cập nhanh</string>
+    <string name="ui_empty_3">Truy cập vào các ứng dụng sử dụng thường xuyên nhanh chóng</string>
+    <string name="ui_empty_3_sub">KISS học hỏi từ thói quen sử dụng</string>
 
-    <string name="toggles_desc">Aktifkan matikan (Wi-Fi, Bluetooth, …)</string>
-    <string name="toggles_name">Matikan</string>
+    <string name="toggles_desc">Điều khiển (Wi-Fi, Bluetooth, …)</string>
+    <string name="toggles_name">Điều khiển</string>
 
     <string name="aliases_desc">Aktifkan alias (convenience shortcut)</string>
     <string name="aliases_name">Alias</string>
 
-    <string name="contacts_desc">Cari di kontak</string>
-    <string name="contacts_name">Kontak</string>
+    <string name="contacts_desc">Tìm kiếm trong danh bạ</string>
+    <string name="contacts_name">Danh bạ</string>
 
-    <string name="search_desc">Enable Google Web Search</string>
-    <string name="search_name">Google search</string>
+    <string name="search_desc">Cho phép tìm kiếm Google</string>
+    <string name="search_name">Tìm kiếm với Google</string>
 
-    <string name="settings_desc">Search in my device Settings</string>
-    <string name="settings_name">Settings</string>
+    <string name="settings_desc">Tìm kiếm trong phần Cài Đặt</string>
+    <string name="settings_name">Cài đặt</string>
 
-    <string name="phone_desc">Direct dialer for phone numbers</string>
+    <string name="phone_desc">Trực tiếp gọi điện thoại cho các số</string>
     <string name="phone_name">Phone</string>
 
-    <string name="stub_application">Application name</string>
-    <string name="stub_contact">Contact name</string>
+    <string name="stub_application">Tên ứng dụng</string>
+    <string name="stub_contact">Tên liên lạc</string>
     <string name="stub_contact_phone">+330 12 34 56 78</string>
     <string name="stub_setting">Setting name</string>
     <string name="stub_toggle">Setting to toggle</string>
-    <string name="stub_phone">Call +330 12 34 56 78</string>
+    <string name="stub_phone">Gọi +330 12 34 56 78</string>
     <string name="main_menu">Menu</string>
-    <string name="main_clear">Clear search field</string>
-    <string name="main_kiss">Display favorites and app list</string>
-    <string name="main_kiss_back">Display history</string>
-    <string name="reset_desc">Reset your KISS history</string>
-    <string name="reset_name">Reset history</string>
-    <string name="keyboard_desc">Always display keyboard at startup</string>
-    <string name="keyboard_name">Display keyboard</string>
-    <string name="spellcheck_name">Enable spellcheck</string>
-    <string name="spellcheck_desc">Provide suggestions when typing</string>
-    <string name="history_hide_desc">Hide history and intro screen</string>
-    <string name="history_hide_name">Minimalistic UI</string>
-    <string name="portrait_title">Force portrait mode</string>
-    <string name="portrait_summary">Always rotate screen to portrait mode when showing the launcher</string>
+    <string name="main_clear">Xóa trường tìm kiếm</string>
+    <string name="main_kiss">Hiện danh sách yêu thích</string>
+    <string name="main_kiss_back">Hiện lịch sử</string>
+    <string name="reset_desc">Xóa lịch sử KISS</string>
+    <string name="reset_name">Xóa lịch sử</string>
+    <string name="keyboard_desc">Luôn hiện bàn phím khi khởi động</string>
+    <string name="keyboard_name">Hiện bàn phím</string>
+    <string name="spellcheck_name">Cho phép kiểm tra chính tả</string>
+    <string name="spellcheck_desc">Cung cấp gợi ý khi gõ</string>
+    <string name="history_hide_desc">Ẩn lịch sử và giới thiệu</string>
+    <string name="history_hide_name">Giao diện rút gọn</string>
+    <string name="portrait_title">Chế độ chân dung</string>
+    <string name="portrait_summary">Để màn hình chế độ chân dung khi đang chạy launcher</string>
     <string name="root_mode_desc">Enable root features if available (to hibernate applications)</string>
-    <string name="root_mode_name">Root mode</string>
-    <string name="root_mode_error">Unable to gain root privileges.</string>
+    <string name="root_mode_name">Chế độ Root</string>
+    <string name="root_mode_error">Cho phép quyền Root.</string>
 
     <string name="alias_phone">dial,call,phone</string>
     <string name="alias_contacts">contacts,people,relations</string>
@@ -86,24 +86,24 @@
     <string name="toggle_data">Network data</string>
     <string name="toggle_torch">Torch</string>
     <string name="toggle_sync">Synchronization</string>
-    <string name="menu_wallpaper">Update wallpaper</string>
+    <string name="menu_wallpaper">Thay hình nền</string>
     <string name="application_not_found">Whoops… unable to launch that app.</string>
     <string name="history_erased">History erased.</string>
 
-    <string name="removed_item">Removed</string>
-    <string name="menu_remove">Remove from history</string>
-    <string name="menu_app_details">App info</string>
-    <string name="menu_app_uninstall">Uninstall</string>
+    <string name="removed_item">Xóa</string>
+    <string name="menu_remove">Xóa khỏi lịch sử</string>
+    <string name="menu_app_details">Thông tin chi tiết</string>
+    <string name="menu_app_uninstall">Gỡ cài đặt</string>
     <string name="menu_app_hibernate">Hibernate</string>
 
     <string name="toast_hibernate_completed">%s hibernated successfully, relaunch to awake.</string>
     <string name="toast_hibernate_error">%s not hibernated successfully.</string>
     <string name="menu_contact_copy_phone">Copy phone number</string>
-    <string name="theme_name">Theme</string>
-    <string name="theme_desc">Update KISS theme</string>
-    <string name="menu_phone_create">Create contact</string>
+    <string name="theme_name">Chủ đề</string>
+    <string name="theme_desc">Cập nhật chủ đề cho Launcher</string>
+    <string name="menu_phone_create">Tạo liên lạc</string>
 
-    <string name="order_apps_name">App list order</string>
-    <string name="order_apps_desc">A to Z or Z to A</string>
+    <string name="order_apps_name">Thứ tự sắp xếp ứng dụng</string>
+    <string name="order_apps_desc">Từ A-Z hoặc Z-A</string>
 
 </resources>
