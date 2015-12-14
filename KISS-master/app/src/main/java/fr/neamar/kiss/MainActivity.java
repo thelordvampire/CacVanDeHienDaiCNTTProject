@@ -15,11 +15,13 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.preference.Preference;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.ContextMenu;
 import android.view.KeyEvent;
@@ -30,6 +32,7 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -41,7 +44,9 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import fr.neamar.kiss.adapter.RecordAdapter;
+import fr.neamar.kiss.db.DB;
 import fr.neamar.kiss.pojo.Pojo;
+import fr.neamar.kiss.preference.ResetPreference;
 import fr.neamar.kiss.result.Result;
 import fr.neamar.kiss.searcher.ApplicationsSearcher;
 import fr.neamar.kiss.searcher.HistorySearcher;
@@ -55,6 +60,7 @@ public class MainActivity extends ListActivity implements QueryInterface {
     public static final String START_LOAD = "fr.neamar.summon.START_LOAD";
     public static final String LOAD_OVER = "fr.neamar.summon.LOAD_OVER";
     public static final String FULL_LOAD_OVER = "fr.neamar.summon.FULL_LOAD_OVER";
+    public static final String K = "KISSLAUNCHER";
 
     /**
      * IDS for the favorites buttons
@@ -103,12 +109,19 @@ public class MainActivity extends ListActivity implements QueryInterface {
      */
     private Searcher searcher;
 
+
+    /*
+    * Clear all history in browser
+    * */
+
+
     /**
      * Called when the activity is first created.
      */
     @SuppressLint("NewApi")
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        Log.i(K, "onCreate MainActivity");
         // Initialize UI
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
@@ -188,8 +201,10 @@ public class MainActivity extends ListActivity implements QueryInterface {
         // On validate, launch first record
         searchEditText.setOnEditorActionListener(new OnEditorActionListener() {
 
+
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                Log.i(K, "onEditorAction MainActivity");
                 RecordAdapter adapter = ((RecordAdapter) getListView().getAdapter());
 
                 adapter.onClick(adapter.getCount() - 1, null);
@@ -259,12 +274,14 @@ public class MainActivity extends ListActivity implements QueryInterface {
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
+        Log.i(K, "onListItemClick MainActivity");
         super.onListItemClick(l, v, position, id);
         adapter.onClick(position, v);
     }
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        Log.i(K, "onCreateContextMenu MainActivity");
         super.onCreateContextMenu(menu, v, menuInfo);
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_settings, menu);
@@ -272,6 +289,7 @@ public class MainActivity extends ListActivity implements QueryInterface {
 
     @Override
     public boolean onContextItemSelected(MenuItem item) {
+        Log.i(K, "onContextItemSelected MainActivity");
         return onOptionsItemSelected(item);
     }
 
@@ -279,6 +297,7 @@ public class MainActivity extends ListActivity implements QueryInterface {
      * Empty text field on resume and show keyboard
      */
     protected void onResume() {
+        Log.i(K, "onResume MainActivity");
         if (prefs.getBoolean("require-layout-update", false)) {
             // Restart current activity to refresh view, since some preferences
             // may require using a new UI
@@ -331,6 +350,7 @@ public class MainActivity extends ListActivity implements QueryInterface {
 
     @Override
     protected void onPause() {
+        Log.i(K, "onPause MainActivity");
         super.onPause();
         KissApplication.getCameraHandler().releaseCamera();
     }
@@ -370,6 +390,7 @@ public class MainActivity extends ListActivity implements QueryInterface {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Log.i(K, "onOptionsItemSelected MainActivity");
         switch (item.getItemId()) {
             case R.id.settings:
                 startActivity(new Intent(android.provider.Settings.ACTION_SETTINGS));
@@ -389,19 +410,29 @@ public class MainActivity extends ListActivity implements QueryInterface {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        Log.i(K, "onCreateOptionsMenu MainActivity");
         super.onCreateOptionsMenu(menu);
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_settings, menu);
 
         return true;
     }
-
+    /*
+    * Clear all history
+    * */
+    public void onClearHistoryButtonClicked(View clearHistoryButton){
+        Log.i(K, "onClearHistoryButtonClicked MainActivity");
+//        ResetPreference resetPreference = new ResetPreference(this, );
+        getApplicationContext().deleteDatabase(DB.DB_NAME);
+        updateRecords("");
+    }
     /**
      * Display menu, on short or long press.
      *
      * @param menuButton "kebab" menu (3 dots)
      */
     public void onMenuButtonClicked(View menuButton) {
+        Log.i(K, "onMenuButtonClicked MainActivity");
         // When the kiss bar is displayed, the button can still be clicked in a few areas (due to favorite margin)
         // To fix this, we discard any click event occurring when the kissbar is displayed
         if (kissBar.getVisibility() != View.VISIBLE)
@@ -490,6 +521,7 @@ public class MainActivity extends ListActivity implements QueryInterface {
     }
 
     private void displayKissBar(Boolean display) {
+        Log.i(K, "displayKissBar MainActivity");
         final ImageView launcherButton = (ImageView) findViewById(R.id.launcherButton);
 
         // get the center for the clipping circle
@@ -573,6 +605,7 @@ public class MainActivity extends ListActivity implements QueryInterface {
      */
 
     private void updateRecords(String query) {
+        Log.i(K, "updateRecords MainActivity");
         if (searcher != null) {
             searcher.cancel(true);
         }
@@ -605,6 +638,7 @@ public class MainActivity extends ListActivity implements QueryInterface {
      * onPause(), since it may be called for a configuration change
      */
     public void launchOccurred(int index, Result result) {
+        Log.i(K, "launchOccurred MainActivity");
         // We selected an item on the list,
         // now we can cleanup the filter:
         if (!searchEditText.getText().toString().equals("")) {
@@ -614,6 +648,7 @@ public class MainActivity extends ListActivity implements QueryInterface {
     }
 
     private void hideKeyboard() {
+        Log.i(K, "hideKeyboard MainActivity");
         // Check if no view has focus:
         View view = this.getCurrentFocus();
         if (view != null) {
@@ -623,6 +658,7 @@ public class MainActivity extends ListActivity implements QueryInterface {
     }
 
     private void showKeyboard() {
+        Log.i(K, "showKeyboard MainActivity");
         searchEditText.requestFocus();
         InputMethodManager mgr = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         mgr.showSoftInput(searchEditText, InputMethodManager.SHOW_IMPLICIT);
