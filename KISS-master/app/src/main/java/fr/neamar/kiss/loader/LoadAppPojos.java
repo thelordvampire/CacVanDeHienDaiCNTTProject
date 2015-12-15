@@ -39,8 +39,7 @@ public class LoadAppPojos extends LoadPojos<AppPojo> {
         final List<ResolveInfo> appsInfo = manager.queryIntentActivities(mainIntent, 0);
         if (prefs.getString("sort-apps", "alphabetical").equals("invertedAlphabetical")) {
             Collections.sort(appsInfo, Collections.reverseOrder(new ResolveInfo.DisplayNameComparator(manager)));
-        }
-        else {
+        } else {
             Collections.sort(appsInfo, new ResolveInfo.DisplayNameComparator(manager));
         }
 

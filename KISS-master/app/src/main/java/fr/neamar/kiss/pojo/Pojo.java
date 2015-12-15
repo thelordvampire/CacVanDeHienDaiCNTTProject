@@ -50,7 +50,7 @@ public abstract class Pojo {
 
     /**
      * Set the user-displayable name of this container
-     * <p/>
+     * <p>
      * When this method a searchable version of the name will be generated for the name and stored
      * as `nameNormalized`. Additionally a mapping from the positions in the searchable name
      * to the positions in the displayable name will be stored (as `namePositionMap`).
@@ -73,7 +73,7 @@ public abstract class Pojo {
     /**
      * Set which area of the display name should marked as highlighted in the `displayName`
      * attribute
-     * <p/>
+     * <p>
      * The start and end positions should be offsets in the normalized string and will be converted
      * to their non-normalized positions before they are used.
      *

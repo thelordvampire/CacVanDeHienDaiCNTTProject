@@ -20,6 +20,7 @@ import android.support.annotation.NonNull;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.ContextMenu;
 import android.view.KeyEvent;
@@ -32,7 +33,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
@@ -41,6 +42,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import fr.neamar.kiss.adapter.RecordAdapter;
+import fr.neamar.kiss.database.Connection1;
 import fr.neamar.kiss.pojo.Pojo;
 import fr.neamar.kiss.result.Result;
 import fr.neamar.kiss.searcher.ApplicationsSearcher;
@@ -49,12 +51,15 @@ import fr.neamar.kiss.searcher.NullSearcher;
 import fr.neamar.kiss.searcher.QueryInterface;
 import fr.neamar.kiss.searcher.QuerySearcher;
 import fr.neamar.kiss.searcher.Searcher;
+import fr.neamar.kiss.swipe.SwipeDetector;
 
 public class MainActivity extends ListActivity implements QueryInterface {
 
     public static final String START_LOAD = "fr.neamar.summon.START_LOAD";
     public static final String LOAD_OVER = "fr.neamar.summon.LOAD_OVER";
     public static final String FULL_LOAD_OVER = "fr.neamar.summon.FULL_LOAD_OVER";
+
+    public SwipeDetector swipeDetector = new SwipeDetector();
 
     /**
      * IDS for the favorites buttons
@@ -102,6 +107,8 @@ public class MainActivity extends ListActivity implements QueryInterface {
      * Task launched on text change
      */
     private Searcher searcher;
+
+    private boolean isMenu = true;
 
     /**
      * Called when the activity is first created.
@@ -161,7 +168,8 @@ public class MainActivity extends ListActivity implements QueryInterface {
 
         setContentView(R.layout.main);
 
-        // Create adapter for records
+        //nếu là listActivity thì phải để cái này
+//         Create adapter for records
         adapter = new RecordAdapter(this, this, R.layout.item_app, new ArrayList<Result>());
         setListAdapter(adapter);
 
@@ -202,15 +210,15 @@ public class MainActivity extends ListActivity implements QueryInterface {
         menuButton = findViewById(R.id.menuButton);
         registerForContextMenu(menuButton);
 
-        getListView().setLongClickable(true);
-        getListView().setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-
-            @Override
-            public boolean onItemLongClick(AdapterView<?> parent, View v, int pos, long id) {
-                ((RecordAdapter) parent.getAdapter()).onLongClick(pos, v);
-                return true;
-            }
-        });
+//        getListView().setLongClickable(true);
+//        getListView().setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+//
+//            @Override
+//            public boolean onItemLongClick(AdapterView<?> parent, View v, int pos, long id) {
+//                ((RecordAdapter) parent.getAdapter()).onLongClick(pos, v);
+//                return true;
+//            }
+//        });
 
         // Enable swiping
         if (prefs.getBoolean("enable-spellcheck", false)) {
@@ -222,6 +230,49 @@ public class MainActivity extends ListActivity implements QueryInterface {
 
         // Apply effects depending on current Android version
         applyDesignTweaks();
+
+
+//        //Code mới
+
+//        List<PackageInfo> packageInfoList = getPackageManager().getInstalledPackages(0);
+//        ListView listAppView = (ListView) findViewById(R.id.listAppABC);
+//
+//        for (int i=0; i < packageInfoList.size(); i++)
+//        {
+//            PackageInfo PackInfo = packageInfoList.get(i);
+//            if (  (PackInfo.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM) == 0)
+//            {
+//                String AppName = PackInfo.applicationInfo.loadLabel(getPackageManager()).toString();
+//
+//                TextView a = new TextView(this);
+//                a.setText(AppName);
+//                listAppView.addView(a);
+//
+//            }
+//        }
+
+
+//        ArrayList<Pojo> listApp = KissApplication.getDataHandler(this).getApplications();
+//        ListView listAppView = (ListView) findViewById(R.id.listAppABC);
+//
+//        for (Pojo app: listApp)
+//        {
+//            TextView a = new TextView(this);
+//            a.setText(app.displayName);
+//            listAppView.addView(a);
+//
+//        };
+
+
+        setListItemTouch();
+
+        createDatabase();
+    }
+
+    private void createDatabase()
+    {
+        Connection1.createDatabase(this);
+        Connection1.createTable();
     }
 
     /**
@@ -257,10 +308,48 @@ public class MainActivity extends ListActivity implements QueryInterface {
         }
     }
 
+//    @Override
+//    protected void onListItemClick(ListView l, View v, int position, long id) {
+//            super.onListItemClick(l, v, position, id);
+//            adapter.onClick(position, v);
+//    }
+
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
-        super.onListItemClick(l, v, position, id);
-        adapter.onClick(position, v);
+//        EditText search= (EditText) findViewById(R.id.searchEditText);
+
+        if(kissBar.getVisibility() != View.VISIBLE) {
+            if (swipeDetector.swipeDetected()) {
+                if (swipeDetector.getAction() == SwipeDetector.Action.LR) {
+                    RecordAdapter adapter = (RecordAdapter) l.getAdapter();
+                    adapter.removeResult(adapter.getItem(position));
+                    adapter.notifyDataSetChanged();
+                } else {
+
+                }
+            } else {
+                super.onListItemClick(l, v, position, id);
+                adapter.onClick(position, v);
+            }
+        }
+        else
+        {
+            super.onListItemClick(l, v, position, id);
+            adapter.onClick(position, v);
+        }
+    }
+
+    private void setListItemTouch()
+    {
+        ListView list = getListView();
+        list.setOnTouchListener(swipeDetector);
+//        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+////                super.onListItemClick(l, view, position, id);
+//                adapter.onClick(position, view);
+//            }
+//        });
     }
 
     @Override
@@ -343,11 +432,28 @@ public class MainActivity extends ListActivity implements QueryInterface {
         // http://developer.android.com/reference/android/app/Activity.html#onNewIntent(android.content.Intent)
     }
 
+    private Boolean exit = false;
+
     @Override
     public void onBackPressed() {
         // Is the kiss menu visible?
         if (menuButton.getVisibility() == View.VISIBLE) {
             displayKissBar(false);
+            isMenu = true;
+
+            if (exit) {
+                finish(); // finish activity
+                System.exit(0);
+            } else {
+                Toast.makeText(this, "Ấn Back để thoát.", Toast.LENGTH_SHORT).show();
+                exit = true;
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        exit = false;
+                    }
+                }, 3 * 1000);
+            }
         } else {
             // If no kissmenu, empty the search bar
             searchEditText.setText("");
@@ -404,8 +510,12 @@ public class MainActivity extends ListActivity implements QueryInterface {
     public void onMenuButtonClicked(View menuButton) {
         // When the kiss bar is displayed, the button can still be clicked in a few areas (due to favorite margin)
         // To fix this, we discard any click event occurring when the kissbar is displayed
-        if (kissBar.getVisibility() != View.VISIBLE)
-            menuButton.showContextMenu();
+        if (kissBar.getVisibility() != View.VISIBLE) {
+            Intent intent = new Intent(MainActivity.this, GridActivity.class);
+            startActivity(intent);
+
+        }
+//            menuButton.showContextMenu();
     }
 
     /**
@@ -421,6 +531,11 @@ public class MainActivity extends ListActivity implements QueryInterface {
      */
     public void onLauncherButtonClicked(View launcherButton) {
         // Display or hide the kiss bar, according to current view tag (showMenu / hideMenu).
+
+//        if(isMenu)
+//            isMenu = false;
+//        else
+//            isMenu = true;
 
         displayKissBar(launcherButton.getTag().equals("showMenu"));
     }
@@ -489,6 +604,8 @@ public class MainActivity extends ListActivity implements QueryInterface {
         }
     }
 
+
+    //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     private void displayKissBar(Boolean display) {
         final ImageView launcherButton = (ImageView) findViewById(R.id.launcherButton);
 
@@ -578,14 +695,12 @@ public class MainActivity extends ListActivity implements QueryInterface {
         }
 
         if (query.length() == 0) {
-            if (prefs.getBoolean("history-hide", false))
-            {
+            if (prefs.getBoolean("history-hide", false)) {
                 searcher = new NullSearcher(this);
                 //Hide default scrollview
                 findViewById(R.id.main_empty).setVisibility(View.INVISIBLE);
 
-            }
-            else {
+            } else {
                 searcher = new HistorySearcher(this);
                 //Show default scrollview
                 findViewById(R.id.main_empty).setVisibility(View.VISIBLE);

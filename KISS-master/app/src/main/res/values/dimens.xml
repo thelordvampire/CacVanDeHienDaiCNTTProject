@@ -11,4 +11,7 @@
     <dimen name="result_margin_bottom">2dp</dimen>
 
     <dimen name="result_title_size">18sp</dimen>
+
+    <dimen name="dgv_overlap_if_switch_straight_line">16dp</dimen>
+
 </resources>

@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<resources><string name="app_name">Llanzador KISS</string>
+<resources>
+    <string name="app_name">Llanzador KISS</string>
     <string name="activity_setting">Axustes de KISS</string>
     <string name="ui_search_hint">Gueta aplicaciones, contautos…</string>
     <string name="ui_item_search">Guetar «%s»</string>
@@ -64,7 +65,7 @@
     <string name="order_apps_name">Orde del llistáu d\'aplicaciones</string>
     <string name="order_apps_desc">A a Z ó Z a A</string>
 
-<string name="title_providers">Esbilla de fornidores</string>
+    <string name="title_providers">Esbilla de fornidores</string>
     <string name="ui_empty_2">Mira siempres la to historia</string>
     <string name="ui_empty_2_sub">Pa un accesu rápidu</string>
     <string name="toggles_desc">Habilita los alternadores (Wi-Fi, Bluetooth…)</string>
@@ -104,4 +105,4 @@
     <string name="main_kiss">Amuesa los favoritos y el llistáu d\'aplicaciones</string>
     <string name="stub_toggle">Axuste p\'alternar</string>
     <string name="history_hide_desc">Anubre la historia y la pantalla d\'introducción</string>
-    </resources>
+</resources>

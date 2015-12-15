@@ -104,7 +104,7 @@
 
     <string name="toggle_sync">Synchronisation</string>
 
-<string name="menu_phone_create">Kontakt erstellen</string>
+    <string name="menu_phone_create">Kontakt erstellen</string>
 
     <string name="order_apps_name">Reihenfolge der Anwendungsliste</string>
     <string name="order_apps_desc">A bis Z oder Z bis A.</string>
