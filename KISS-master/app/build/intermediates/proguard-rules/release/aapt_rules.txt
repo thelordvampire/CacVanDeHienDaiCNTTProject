@@ -1,0 +1,48 @@
+# view AndroidManifest.xml #generated:96
+-keep class fr.neamar.kiss.GridActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class fr.neamar.kiss.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class fr.neamar.kiss.SettingsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:122
+-keep class fr.neamar.kiss.broadcast.IncomingCallHandler { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class fr.neamar.kiss.broadcast.IncomingSmsHandler { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class fr.neamar.kiss.broadcast.NewAppInstalledHandler { <init>(...); }
+
+# view res/layout/activity_grid.xml #generated:8
+-keep class fr.neamar.kiss.grid_view.DynamicGridView { <init>(...); }
+
+# view res/xml/preferences.xml #generated:5
+-keep class fr.neamar.kiss.preference.ResetPreference { <init>(...); }
+
+# view res/xml/preferences.xml #generated:80
+-keep class fr.neamar.kiss.preference.RootModePreference { <init>(...); }
+
+# view res/layout/item_contact.xml #generated:16
+# view v11\res/layout-v11/item_contact.xml #generated:16
+# view v21\res/layout-v21/item_contact.xml #generated:16
+-keep class fr.neamar.kiss.ui.ImprovedQuickContactBadge { <init>(...); }
+
+# onClick res/layout/main.xml #generated:112
+-keepclassmembers class * { *** onClearButtonClicked(...); }
+
+# onClick res/layout/main_kissbar.xml #generated:34
+# onClick res/layout/main_kissbar.xml #generated:44
+# onClick res/layout/main_kissbar.xml #generated:54
+# onClick res/layout/main_kissbar.xml #generated:64
+-keepclassmembers class * { *** onFavoriteButtonClicked(...); }
+
+# onClick res/layout/main.xml #generated:53
+# onClick res/layout/main_kissbar.xml #generated:9
+-keepclassmembers class * { *** onLauncherButtonClicked(...); }
+
+# onClick res/layout/main.xml #generated:95
+-keepclassmembers class * { *** onMenuButtonClicked(...); }
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Bao/Desktop/launchers/KISS-master/app/src/main/res/values-v11/themes.xml -->
+    <eat-comment/>
+    <style name="BaseThemeLight" parent="@android:style/Theme.Light.NoTitleBar"/>
+</resources>

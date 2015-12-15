@@ -1,0 +1,260 @@
+fr.neamar.kiss.GridActivity
+fr.neamar.kiss.GridActivity: GridActivity()
+fr.neamar.kiss.MainActivity
+fr.neamar.kiss.MainActivity: MainActivity()
+fr.neamar.kiss.MainActivity: void onMenuButtonClicked(android.view.View)
+fr.neamar.kiss.MainActivity: void onClearButtonClicked(android.view.View)
+fr.neamar.kiss.MainActivity: void onLauncherButtonClicked(android.view.View)
+fr.neamar.kiss.MainActivity: void onFavoriteButtonClicked(android.view.View)
+fr.neamar.kiss.R$array: int sortAppListEntries
+fr.neamar.kiss.R$array: int sortAppListValues
+fr.neamar.kiss.R$array: int themesEntries
+fr.neamar.kiss.R$array: int themesValues
+fr.neamar.kiss.R$attr: int dividerDrawable
+fr.neamar.kiss.R$attr: int listBackgroundColor
+fr.neamar.kiss.R$attr: int resultColor
+fr.neamar.kiss.R$attr: int searchBackgroundColor
+fr.neamar.kiss.R$attr: int searchColor
+fr.neamar.kiss.R$color: int kiss_background
+fr.neamar.kiss.R$color: int kiss_background_light_transparent
+fr.neamar.kiss.R$color: int kiss_divider_dark
+fr.neamar.kiss.R$color: int kiss_divider_light
+fr.neamar.kiss.R$color: int kiss_green
+fr.neamar.kiss.R$color: int kiss_green_dark
+fr.neamar.kiss.R$color: int kiss_list_background_inverse
+fr.neamar.kiss.R$color: int kiss_text_dark
+fr.neamar.kiss.R$dimen: int dgv_overlap_if_switch_straight_line
+fr.neamar.kiss.R$dimen: int icon_margin_bottom
+fr.neamar.kiss.R$dimen: int icon_margin_left
+fr.neamar.kiss.R$dimen: int icon_margin_right
+fr.neamar.kiss.R$dimen: int icon_margin_top
+fr.neamar.kiss.R$dimen: int result_margin_bottom
+fr.neamar.kiss.R$dimen: int result_margin_left
+fr.neamar.kiss.R$dimen: int result_margin_right
+fr.neamar.kiss.R$dimen: int result_margin_top
+fr.neamar.kiss.R$dimen: int result_title_size
+fr.neamar.kiss.R$drawable: int clear_dark
+fr.neamar.kiss.R$drawable: int cursor
+fr.neamar.kiss.R$drawable: int dots
+fr.neamar.kiss.R$drawable: int ic_contact
+fr.neamar.kiss.R$drawable: int ic_launcher
+fr.neamar.kiss.R$drawable: int ic_launcher_white
+fr.neamar.kiss.R$drawable: int ic_message
+fr.neamar.kiss.R$drawable: int ic_phone
+fr.neamar.kiss.R$drawable: int list_separator_dark
+fr.neamar.kiss.R$drawable: int list_separator_light
+fr.neamar.kiss.R$drawable: int list_separator_transparent
+fr.neamar.kiss.R$drawable: int setting_airplane
+fr.neamar.kiss.R$drawable: int setting_battery
+fr.neamar.kiss.R$drawable: int toggle_bluetooth
+fr.neamar.kiss.R$drawable: int toggle_data
+fr.neamar.kiss.R$drawable: int toggle_silent
+fr.neamar.kiss.R$drawable: int toggle_torch
+fr.neamar.kiss.R$drawable: int toggle_wifi
+fr.neamar.kiss.R$drawable: int zerostate_burger
+fr.neamar.kiss.R$drawable: int zerostate_kiss
+fr.neamar.kiss.R$drawable: int zerostate_search
+fr.neamar.kiss.R$id: int RelativeLayout1
+fr.neamar.kiss.R$id: int clearButton
+fr.neamar.kiss.R$id: int dgv_wobble_tag
+fr.neamar.kiss.R$id: int dynamic_grid
+fr.neamar.kiss.R$id: int favorite0
+fr.neamar.kiss.R$id: int favorite1
+fr.neamar.kiss.R$id: int favorite2
+fr.neamar.kiss.R$id: int favorite3
+fr.neamar.kiss.R$id: int item_app_details
+fr.neamar.kiss.R$id: int item_app_hibernate
+fr.neamar.kiss.R$id: int item_app_icon
+fr.neamar.kiss.R$id: int item_app_name
+fr.neamar.kiss.R$id: int item_app_uninstall
+fr.neamar.kiss.R$id: int item_contact_action_message
+fr.neamar.kiss.R$id: int item_contact_action_phone
+fr.neamar.kiss.R$id: int item_contact_copy_phone
+fr.neamar.kiss.R$id: int item_contact_icon
+fr.neamar.kiss.R$id: int item_contact_name
+fr.neamar.kiss.R$id: int item_contact_phone
+fr.neamar.kiss.R$id: int item_img
+fr.neamar.kiss.R$id: int item_phone_createcontact
+fr.neamar.kiss.R$id: int item_phone_icon
+fr.neamar.kiss.R$id: int item_phone_sendmessage
+fr.neamar.kiss.R$id: int item_phone_text
+fr.neamar.kiss.R$id: int item_remove
+fr.neamar.kiss.R$id: int item_search_icon
+fr.neamar.kiss.R$id: int item_search_text
+fr.neamar.kiss.R$id: int item_setting_icon
+fr.neamar.kiss.R$id: int item_setting_name
+fr.neamar.kiss.R$id: int item_title
+fr.neamar.kiss.R$id: int item_toggle_action_toggle
+fr.neamar.kiss.R$id: int item_toggle_icon
+fr.neamar.kiss.R$id: int item_toggle_name
+fr.neamar.kiss.R$id: int launcherButton
+fr.neamar.kiss.R$id: int listAppABC
+fr.neamar.kiss.R$id: int loaderBar
+fr.neamar.kiss.R$id: int main_empty
+fr.neamar.kiss.R$id: int main_kissbar
+fr.neamar.kiss.R$id: int menuButton
+fr.neamar.kiss.R$id: int preferences
+fr.neamar.kiss.R$id: int searchEditLayout
+fr.neamar.kiss.R$id: int searchEditText
+fr.neamar.kiss.R$id: int settings
+fr.neamar.kiss.R$id: int wallpaper
+fr.neamar.kiss.R$id: int whiteLauncherButton
+fr.neamar.kiss.R$integer: int column_count
+fr.neamar.kiss.R$layout: int activity_grid
+fr.neamar.kiss.R$layout: int item_app
+fr.neamar.kiss.R$layout: int item_contact
+fr.neamar.kiss.R$layout: int item_grid
+fr.neamar.kiss.R$layout: int item_phone
+fr.neamar.kiss.R$layout: int item_search
+fr.neamar.kiss.R$layout: int item_setting
+fr.neamar.kiss.R$layout: int item_toggle
+fr.neamar.kiss.R$layout: int main
+fr.neamar.kiss.R$layout: int main_empty
+fr.neamar.kiss.R$layout: int main_kissbar
+fr.neamar.kiss.R$layout: int ui_togglebutton
+fr.neamar.kiss.R$menu: int menu_item_app
+fr.neamar.kiss.R$menu: int menu_item_app_root
+fr.neamar.kiss.R$menu: int menu_item_app_uninstall
+fr.neamar.kiss.R$menu: int menu_item_contact
+fr.neamar.kiss.R$menu: int menu_item_default
+fr.neamar.kiss.R$menu: int menu_item_phone
+fr.neamar.kiss.R$menu: int menu_settings
+fr.neamar.kiss.R$string: int activity_setting
+fr.neamar.kiss.R$string: int alias_clock
+fr.neamar.kiss.R$string: int alias_contacts
+fr.neamar.kiss.R$string: int alias_mail
+fr.neamar.kiss.R$string: int alias_market
+fr.neamar.kiss.R$string: int alias_messaging
+fr.neamar.kiss.R$string: int alias_phone
+fr.neamar.kiss.R$string: int alias_web
+fr.neamar.kiss.R$string: int aliases_desc
+fr.neamar.kiss.R$string: int aliases_name
+fr.neamar.kiss.R$string: int app_name
+fr.neamar.kiss.R$string: int application_not_found
+fr.neamar.kiss.R$string: int contacts_desc
+fr.neamar.kiss.R$string: int contacts_name
+fr.neamar.kiss.R$string: int history_erased
+fr.neamar.kiss.R$string: int history_hide_desc
+fr.neamar.kiss.R$string: int history_hide_name
+fr.neamar.kiss.R$string: int keyboard_desc
+fr.neamar.kiss.R$string: int keyboard_name
+fr.neamar.kiss.R$string: int main_clear
+fr.neamar.kiss.R$string: int main_kiss
+fr.neamar.kiss.R$string: int main_kiss_back
+fr.neamar.kiss.R$string: int main_menu
+fr.neamar.kiss.R$string: int menu_app_details
+fr.neamar.kiss.R$string: int menu_app_hibernate
+fr.neamar.kiss.R$string: int menu_app_uninstall
+fr.neamar.kiss.R$string: int menu_contact_copy_phone
+fr.neamar.kiss.R$string: int menu_phone_create
+fr.neamar.kiss.R$string: int menu_preferences
+fr.neamar.kiss.R$string: int menu_remove
+fr.neamar.kiss.R$string: int menu_settings
+fr.neamar.kiss.R$string: int menu_wallpaper
+fr.neamar.kiss.R$string: int no_favorites
+fr.neamar.kiss.R$string: int order_apps_desc
+fr.neamar.kiss.R$string: int order_apps_name
+fr.neamar.kiss.R$string: int phone_desc
+fr.neamar.kiss.R$string: int phone_name
+fr.neamar.kiss.R$string: int portrait_summary
+fr.neamar.kiss.R$string: int portrait_title
+fr.neamar.kiss.R$string: int removed_item
+fr.neamar.kiss.R$string: int reset_desc
+fr.neamar.kiss.R$string: int reset_name
+fr.neamar.kiss.R$string: int root_mode_desc
+fr.neamar.kiss.R$string: int root_mode_error
+fr.neamar.kiss.R$string: int root_mode_name
+fr.neamar.kiss.R$string: int search_desc
+fr.neamar.kiss.R$string: int search_name
+fr.neamar.kiss.R$string: int settings_airplane
+fr.neamar.kiss.R$string: int settings_applications
+fr.neamar.kiss.R$string: int settings_battery
+fr.neamar.kiss.R$string: int settings_connectivity
+fr.neamar.kiss.R$string: int settings_desc
+fr.neamar.kiss.R$string: int settings_device_info
+fr.neamar.kiss.R$string: int settings_name
+fr.neamar.kiss.R$string: int settings_prefix
+fr.neamar.kiss.R$string: int spellcheck_desc
+fr.neamar.kiss.R$string: int spellcheck_name
+fr.neamar.kiss.R$string: int stub_application
+fr.neamar.kiss.R$string: int stub_contact
+fr.neamar.kiss.R$string: int stub_contact_phone
+fr.neamar.kiss.R$string: int stub_phone
+fr.neamar.kiss.R$string: int stub_setting
+fr.neamar.kiss.R$string: int stub_toggle
+fr.neamar.kiss.R$string: int theme_desc
+fr.neamar.kiss.R$string: int theme_name
+fr.neamar.kiss.R$string: int title_advanced
+fr.neamar.kiss.R$string: int title_history
+fr.neamar.kiss.R$string: int title_providers
+fr.neamar.kiss.R$string: int title_ui
+fr.neamar.kiss.R$string: int toast_hibernate_completed
+fr.neamar.kiss.R$string: int toast_hibernate_error
+fr.neamar.kiss.R$string: int toggle_bluetooth
+fr.neamar.kiss.R$string: int toggle_data
+fr.neamar.kiss.R$string: int toggle_silent
+fr.neamar.kiss.R$string: int toggle_sync
+fr.neamar.kiss.R$string: int toggle_torch
+fr.neamar.kiss.R$string: int toggle_wifi
+fr.neamar.kiss.R$string: int toggles_desc
+fr.neamar.kiss.R$string: int toggles_name
+fr.neamar.kiss.R$string: int toggles_prefix
+fr.neamar.kiss.R$string: int ui_empty_1
+fr.neamar.kiss.R$string: int ui_empty_1_sub
+fr.neamar.kiss.R$string: int ui_empty_2
+fr.neamar.kiss.R$string: int ui_empty_2_sub
+fr.neamar.kiss.R$string: int ui_empty_3
+fr.neamar.kiss.R$string: int ui_empty_3_sub
+fr.neamar.kiss.R$string: int ui_item_contact_hint_call
+fr.neamar.kiss.R$string: int ui_item_contact_hint_message
+fr.neamar.kiss.R$string: int ui_item_phone
+fr.neamar.kiss.R$string: int ui_item_search
+fr.neamar.kiss.R$string: int ui_search_hint
+fr.neamar.kiss.R$style: int AppThemeDark
+fr.neamar.kiss.R$style: int AppThemeLight
+fr.neamar.kiss.R$style: int AppThemeSemiTransparent
+fr.neamar.kiss.R$style: int AppThemeTransparent
+fr.neamar.kiss.R$style: int BaseThemeDark
+fr.neamar.kiss.R$style: int BaseThemeLight
+fr.neamar.kiss.R$style: int SettingTheme
+fr.neamar.kiss.R$style: int SettingThemeDark
+fr.neamar.kiss.R$xml: int preferences
+fr.neamar.kiss.SettingsActivity
+fr.neamar.kiss.SettingsActivity: SettingsActivity()
+fr.neamar.kiss.broadcast.IncomingCallHandler
+fr.neamar.kiss.broadcast.IncomingCallHandler: IncomingCallHandler()
+fr.neamar.kiss.broadcast.IncomingSmsHandler
+fr.neamar.kiss.broadcast.IncomingSmsHandler: IncomingSmsHandler()
+fr.neamar.kiss.broadcast.NewAppInstalledHandler
+fr.neamar.kiss.broadcast.NewAppInstalledHandler: NewAppInstalledHandler()
+fr.neamar.kiss.grid_view.DynamicGridView
+fr.neamar.kiss.grid_view.DynamicGridView: DynamicGridView(android.content.Context)
+fr.neamar.kiss.grid_view.DynamicGridView: DynamicGridView(android.content.Context,android.util.AttributeSet)
+fr.neamar.kiss.grid_view.DynamicGridView: DynamicGridView(android.content.Context,android.util.AttributeSet,int)
+fr.neamar.kiss.grid_view.DynamicGridView: void setOnScrollListener(android.widget.AbsListView$OnScrollListener)
+fr.neamar.kiss.grid_view.DynamicGridView: void setOnDropListener(fr.neamar.kiss.grid_view.DynamicGridView$OnDropListener)
+fr.neamar.kiss.grid_view.DynamicGridView: void setOnDragListener(fr.neamar.kiss.grid_view.DynamicGridView$OnDragListener)
+fr.neamar.kiss.grid_view.DynamicGridView: void setEditModeEnabled(boolean)
+fr.neamar.kiss.grid_view.DynamicGridView: void setOnEditModeChangeListener(fr.neamar.kiss.grid_view.DynamicGridView$OnEditModeChangeListener)
+fr.neamar.kiss.grid_view.DynamicGridView: void setWobbleInEditMode(boolean)
+fr.neamar.kiss.grid_view.DynamicGridView: void setOnItemClickListener(android.widget.AdapterView$OnItemClickListener)
+fr.neamar.kiss.grid_view.DynamicGridView: void setUndoSupportEnabled(boolean)
+fr.neamar.kiss.grid_view.DynamicGridView: void setOnSelectedItemBitmapCreationListener(fr.neamar.kiss.grid_view.DynamicGridView$OnSelectedItemBitmapCreationListener)
+fr.neamar.kiss.grid_view.DynamicGridView: int getColumnCount()
+fr.neamar.kiss.grid_view.DynamicGridView: fr.neamar.kiss.grid_view.DynamicGridAdapterInterface getAdapterInterface()
+fr.neamar.kiss.grid_view.DynamicGridView: void setAdapter(android.widget.ListAdapter)
+fr.neamar.kiss.grid_view.DynamicGridView: void setAdapter(android.widget.Adapter)
+fr.neamar.kiss.preference.ResetPreference
+fr.neamar.kiss.preference.ResetPreference: ResetPreference(android.content.Context,android.util.AttributeSet)
+fr.neamar.kiss.preference.RootModePreference
+fr.neamar.kiss.preference.RootModePreference: RootModePreference(android.content.Context,android.util.AttributeSet)
+fr.neamar.kiss.swipe.SwipeDetector$Action: fr.neamar.kiss.swipe.SwipeDetector$Action[] values()
+fr.neamar.kiss.swipe.SwipeDetector$Action: fr.neamar.kiss.swipe.SwipeDetector$Action valueOf(java.lang.String)
+fr.neamar.kiss.ui.ImprovedQuickContactBadge
+fr.neamar.kiss.ui.ImprovedQuickContactBadge: ImprovedQuickContactBadge(android.content.Context)
+fr.neamar.kiss.ui.ImprovedQuickContactBadge: ImprovedQuickContactBadge(android.content.Context,android.util.AttributeSet)
+fr.neamar.kiss.ui.ImprovedQuickContactBadge: ImprovedQuickContactBadge(android.content.Context,android.util.AttributeSet,int)
+fr.neamar.kiss.ui.ImprovedQuickContactBadge: void setExtraOnClickListener(android.view.View$OnClickListener)
+fr.neamar.kiss.ui.RoundedQuickContactBadge: RoundedQuickContactBadge(android.content.Context)
+fr.neamar.kiss.ui.RoundedQuickContactBadge: RoundedQuickContactBadge(android.content.Context,android.util.AttributeSet)
+fr.neamar.kiss.ui.RoundedQuickContactBadge: RoundedQuickContactBadge(android.content.Context,android.util.AttributeSet,int)

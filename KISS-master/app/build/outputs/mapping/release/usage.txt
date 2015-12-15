@@ -1,0 +1,144 @@
+android.support.annotation.AnimRes
+android.support.annotation.AnimatorRes
+android.support.annotation.AnyRes
+android.support.annotation.ArrayRes
+android.support.annotation.AttrRes
+android.support.annotation.BinderThread
+android.support.annotation.BoolRes
+android.support.annotation.CallSuper
+android.support.annotation.CheckResult
+android.support.annotation.ColorInt
+android.support.annotation.ColorRes
+android.support.annotation.DimenRes
+android.support.annotation.DrawableRes
+android.support.annotation.FloatRange
+android.support.annotation.FractionRes
+android.support.annotation.IdRes
+android.support.annotation.IntDef
+android.support.annotation.IntRange
+android.support.annotation.IntegerRes
+android.support.annotation.InterpolatorRes
+android.support.annotation.Keep
+android.support.annotation.LayoutRes
+android.support.annotation.MainThread
+android.support.annotation.MenuRes
+android.support.annotation.NonNull
+android.support.annotation.Nullable
+android.support.annotation.PluralsRes
+android.support.annotation.RawRes
+android.support.annotation.RequiresPermission
+android.support.annotation.RequiresPermission$Read
+android.support.annotation.RequiresPermission$Write
+android.support.annotation.Size
+android.support.annotation.StringDef
+android.support.annotation.StringRes
+android.support.annotation.StyleRes
+android.support.annotation.StyleableRes
+android.support.annotation.TransitionRes
+android.support.annotation.UiThread
+android.support.annotation.VisibleForTesting
+android.support.annotation.WorkerThread
+android.support.annotation.XmlRes
+fr.neamar.kiss.BuildConfig
+fr.neamar.kiss.KissApplication:
+    public static final int TOUCH_DELAY
+    6:6:public KissApplication()
+fr.neamar.kiss.MainActivity:
+    public static final java.lang.String START_LOAD
+    public static final java.lang.String LOAD_OVER
+    public static final java.lang.String FULL_LOAD_OVER
+fr.neamar.kiss.R
+fr.neamar.kiss.R$array
+fr.neamar.kiss.R$attr
+fr.neamar.kiss.R$color
+fr.neamar.kiss.R$dimen
+fr.neamar.kiss.R$drawable
+fr.neamar.kiss.R$id
+fr.neamar.kiss.R$integer
+fr.neamar.kiss.R$layout
+fr.neamar.kiss.R$menu
+fr.neamar.kiss.R$string
+fr.neamar.kiss.R$style
+fr.neamar.kiss.R$xml
+fr.neamar.kiss.RootHandler:
+    18:18:public boolean isRootActivated()
+    41:43:public boolean hibernateApp(java.lang.String)
+fr.neamar.kiss.adapter.RecordAdapter:
+    70:77:public void onLongClick(int,android.view.View)
+fr.neamar.kiss.database.Connection1:
+    16:16:public Connection1()
+fr.neamar.kiss.dataprovider.PhoneProvider:
+    public static final java.lang.String PHONE_SCHEME
+fr.neamar.kiss.db.DB:
+    public static final java.lang.String DB_NAME
+    private static final int DB_VERSION
+fr.neamar.kiss.db.DBHelper:
+    10:10:public DBHelper()
+fr.neamar.kiss.grid_view.AbstractDynamicGridAdapter:
+    public static final int INVALID_ID
+    74:75:protected void clearStableIdMap()
+    83:84:protected void removeStableID(java.lang.Object)
+fr.neamar.kiss.grid_view.BaseDynamicGridAdapter:
+    19:25:protected BaseDynamicGridAdapter(android.content.Context,int)
+    58:61:public void set(java.util.List)
+    65:68:public void clear()
+    77:80:public void add(fr.neamar.kiss.model.App)
+    90:93:public void add(int,fr.neamar.kiss.model.App)
+    102:105:public void add(java.util.List)
+    115:118:public void remove(fr.neamar.kiss.model.App)
+    142:144:public void setColumnCount(int)
+    164:164:public java.util.List getItems()
+fr.neamar.kiss.grid_view.DynamicGridUtils:
+    8:8:public DynamicGridUtils()
+    29:33:public static void swap(java.util.List,int,int)
+fr.neamar.kiss.grid_view.DynamicGridView:
+    private static final int INVALID_ID
+    private static final int MOVE_DURATION
+    private static final int SMOOTH_SCROLL_AMOUNT_AT_EDGE
+    129:130:public void startEditMode()
+    156:156:public boolean isEditModeEnabled()
+    172:172:public boolean isWobbleInEditMode()
+    186:186:public boolean isUndoSupportEnabled()
+    202:208:public void undoLastModification()
+    211:219:public void undoAllModifications()
+    222:227:public boolean hasModificationHistory()
+    231:232:public void clearModificationHistory()
+    239:242:private void undoModification(fr.neamar.kiss.grid_view.DynamicGridView$DynamicGridModification)
+fr.neamar.kiss.grid_view.DynamicGridView$DynamicGridModification:
+    1086:1086:public boolean hasTransitions()
+fr.neamar.kiss.grid_view_adapter.CheeseDynamicAdapter$CheeseViewHolder:
+    70:72:void build(java.lang.String)
+fr.neamar.kiss.model.App:
+    29:30:public void setName(java.lang.String)
+    37:38:public void setIcon(android.graphics.drawable.Drawable)
+fr.neamar.kiss.model.Cheeses
+fr.neamar.kiss.normalizer.PhoneNormalizer:
+    8:8:public PhoneNormalizer()
+fr.neamar.kiss.normalizer.StringNormalizer:
+    10:10:public StringNormalizer()
+fr.neamar.kiss.result.AppResult:
+    67:86:protected android.widget.PopupMenu buildPopupMenu(android.content.Context,fr.neamar.kiss.adapter.RecordAdapter,android.view.View)
+    91:105:protected java.lang.Boolean popupMenuClickHandler(android.content.Context,fr.neamar.kiss.adapter.RecordAdapter,android.view.MenuItem)
+    112:115:private void launchAppDetails(android.content.Context,fr.neamar.kiss.pojo.AppPojo)
+    118:124:private void hibernate(android.content.Context,fr.neamar.kiss.pojo.AppPojo)
+    130:133:private void launchUninstall(android.content.Context,fr.neamar.kiss.pojo.AppPojo)
+fr.neamar.kiss.result.ContactResult:
+    111:114:protected android.widget.PopupMenu buildPopupMenu(android.content.Context,fr.neamar.kiss.adapter.RecordAdapter,android.view.View)
+    119:125:protected java.lang.Boolean popupMenuClickHandler(android.content.Context,fr.neamar.kiss.adapter.RecordAdapter,android.view.MenuItem)
+    130:142:private void copyPhone(android.content.Context,fr.neamar.kiss.pojo.ContactPojo)
+fr.neamar.kiss.result.PhoneResult:
+    42:45:protected android.widget.PopupMenu buildPopupMenu(android.content.Context,fr.neamar.kiss.adapter.RecordAdapter,android.view.View)
+    50:67:protected java.lang.Boolean popupMenuClickHandler(android.content.Context,fr.neamar.kiss.adapter.RecordAdapter,android.view.MenuItem)
+fr.neamar.kiss.result.Result:
+    68:76:public android.widget.PopupMenu getPopupMenu(android.content.Context,fr.neamar.kiss.adapter.RecordAdapter,android.view.View)
+    86:89:android.widget.PopupMenu buildPopupMenu(android.content.Context,fr.neamar.kiss.adapter.RecordAdapter,android.view.View)
+    99:104:java.lang.Boolean popupMenuClickHandler(android.content.Context,fr.neamar.kiss.adapter.RecordAdapter,android.view.MenuItem)
+    114:116:private void removeItem(android.content.Context,fr.neamar.kiss.adapter.RecordAdapter)
+fr.neamar.kiss.result.Result$1
+fr.neamar.kiss.searcher.HistorySearcher:
+    private static final int MAX_RECORDS
+fr.neamar.kiss.searcher.QuerySearcher:
+    private static final int MAX_RECORDS
+fr.neamar.kiss.swipe.SwipeDetector:
+    private static final java.lang.String logTag
+    private static final int MIN_DISTANCE

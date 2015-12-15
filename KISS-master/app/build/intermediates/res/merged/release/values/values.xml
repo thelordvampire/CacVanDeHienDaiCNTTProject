@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Bao/Desktop/launchers/KISS-master/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="sortAppListEntries">
+        <item>From A to Z</item>
+        <item>From Z to A</item>
+    </string-array>
+    <string-array name="sortAppListValues">
+        <item>alphabetical</item>
+        <item>invertedAlphabetical</item>
+    </string-array>
+    <string-array name="themesEntries">
+        <item>Light theme (default)</item>
+        <item>Dark theme</item>
+        <item>Transparent theme</item>
+        <item>Semi-transparent theme</item>
+    </string-array>
+    <string-array name="themesValues">
+        <item>light</item>
+        <item>dark</item>
+        <item>transparent</item>
+        <item>semi-transparent</item>
+    </string-array>
+    <!-- From: file:/C:/Users/Bao/Desktop/launchers/KISS-master/app/src/main/res/values/attrs.xml -->
+    <eat-comment/>
+    <attr format="reference" name="dividerDrawable"/>
+    <attr format="reference|color" name="listBackgroundColor"/>
+    <attr format="reference|color" name="resultColor"/>
+    <attr format="reference|color" name="searchBackgroundColor"/>
+    <attr format="reference|color" name="searchColor"/>
+    <!-- From: file:/C:/Users/Bao/Desktop/launchers/KISS-master/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="kiss_background">#eaeaea</color>
+    <color name="kiss_background_light_transparent">#88FFFFFF</color>
+    <color name="kiss_divider_dark">#434343</color>
+    <color name="kiss_divider_light">#e0e0e0</color>
+    <color name="kiss_green">#4caf50</color>
+    <color name="kiss_green_dark">#388E3C</color>
+    <color name="kiss_list_background_inverse">#303030</color>
+    <color name="kiss_text_dark">#b3b3b3</color>
+    <!-- From: file:/C:/Users/Bao/Desktop/launchers/KISS-master/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="dgv_overlap_if_switch_straight_line">16dp</dimen>
+    <dimen name="icon_margin_bottom">5dp</dimen>
+    <dimen name="icon_margin_left">0dp</dimen>
+    <dimen name="icon_margin_right">10dp</dimen>
+    <dimen name="icon_margin_top">5dp</dimen>
+    <dimen name="result_margin_bottom">2dp</dimen>
+    <dimen name="result_margin_left">10dp</dimen>
+    <dimen name="result_margin_right">10dp</dimen>
+    <dimen name="result_margin_top">2dp</dimen>
+    <dimen name="result_title_size">18sp</dimen>
+    <!-- From: file:/C:/Users/Bao/Desktop/launchers/KISS-master/app/src/main/res/values/id.xml -->
+    <eat-comment/>
+    <item name="dgv_wobble_tag" type="id"/>
+    <!-- From: file:/C:/Users/Bao/Desktop/launchers/KISS-master/app/src/main/res/values/integers.xml -->
+    <eat-comment/>
+    <integer name="column_count">3</integer>
+    <!-- From: file:/C:/Users/Bao/Desktop/launchers/KISS-master/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="activity_setting">Cài đặt KISS</string>
+    <string name="alias_clock">clock,alarm,timer,stopwatch</string>
+    <string name="alias_contacts">contacts,people,relations</string>
+    <string name="alias_mail">mail,email</string>
+    <string name="alias_market">market,store,app center</string>
+    <string name="alias_messaging">text message,compose,sms,mms,messaging</string>
+    <string name="alias_phone">dial,call,phone</string>
+    <string name="alias_web">internet,web,browser</string>
+    <string name="aliases_desc">Aktifkan alias (convenience shortcut)</string>
+    <string name="aliases_name">Alias</string>
+    <string name="app_name">KISS launcher</string>
+    <string name="application_not_found">Whoops… unable to launch that app.</string>
+    <string name="contacts_desc">Cari di kontak</string>
+    <string name="contacts_name">Kontak</string>
+    <string name="history_erased">History erased.</string>
+    <string name="history_hide_desc">Hide history and intro screen</string>
+    <string name="history_hide_name">Minimalistic UI</string>
+    <string name="keyboard_desc">Always display keyboard at startup</string>
+    <string name="keyboard_name">Display keyboard</string>
+    <string name="main_clear">Clear search field</string>
+    <string name="main_kiss">Display favorites and app list</string>
+    <string name="main_kiss_back">Display history</string>
+    <string name="main_menu">Menu</string>
+    <string name="menu_app_details">App info</string>
+    <string name="menu_app_hibernate">Hibernate</string>
+    <string name="menu_app_uninstall">Uninstall</string>
+    <string name="menu_contact_copy_phone">Copy phone number</string>
+    <string name="menu_phone_create">Create contact</string>
+    <string name="menu_preferences">Cài đặt KISS</string>
+    <string name="menu_remove">Remove from history</string>
+    <string name="menu_settings">Cài đặt thiết bị</string>
+    <string name="menu_wallpaper">Thay đổi hình nền</string>
+    <string name="no_favorites">Chưa có ứng dụng yêu thích</string>
+    <string name="order_apps_desc">A to Z or Z to A</string>
+    <string name="order_apps_name">App list order</string>
+    <string name="phone_desc">Direct dialer for phone numbers</string>
+    <string name="phone_name">Phone</string>
+    <string name="portrait_summary">Always rotate screen to portrait mode when showing the launcher</string>
+    <string name="portrait_title">Force portrait mode</string>
+    <string name="removed_item">Removed</string>
+    <string name="reset_desc">Reset your KISS history</string>
+    <string name="reset_name">Reset history</string>
+    <string name="root_mode_desc">Enable root features if available (to hibernate applications)</string>
+    <string name="root_mode_error">Unable to gain root privileges.</string>
+    <string name="root_mode_name">Root mode</string>
+    <string name="search_desc">Enable Google Web Search</string>
+    <string name="search_name">Google search</string>
+    <string name="settings_airplane">Airplane mode</string>
+    <string name="settings_applications">Applications</string>
+    <string name="settings_battery">Battery</string>
+    <string name="settings_connectivity">Connectivity</string>
+    <string name="settings_desc">Search in my device Settings</string>
+    <string name="settings_device_info">Device info</string>
+    <string name="settings_name">Settings</string>
+    <string name="settings_prefix">"Setting: "</string>
+    <string name="spellcheck_desc">Provide suggestions when typing</string>
+    <string name="spellcheck_name">Enable spellcheck</string>
+    <string name="stub_application">Application name</string>
+    <string name="stub_contact">Contact name</string>
+    <string name="stub_contact_phone">+330 12 34 56 78</string>
+    <string name="stub_phone">Call +330 12 34 56 78</string>
+    <string name="stub_setting">Setting name</string>
+    <string name="stub_toggle">Setting to toggle</string>
+    <string name="theme_desc">Update KISS theme</string>
+    <string name="theme_name">Theme</string>
+    <string name="title_advanced">Cài đặt nâng cao</string>
+    <string name="title_history">Lịch sử</string>
+    <string name="title_providers">Lựa chọn Provider</string>
+    <string name="title_ui">Giao diện người dùng</string>
+    <string name="toast_hibernate_completed">%s hibernated successfully, relaunch to awake.</string>
+    <string name="toast_hibernate_error">%s not hibernated successfully.</string>
+    <string name="toggle_bluetooth">Bluetooth</string>
+    <string name="toggle_data">Network data</string>
+    <string name="toggle_silent">Silent</string>
+    <string name="toggle_sync">Synchronization</string>
+    <string name="toggle_torch">Torch</string>
+    <string name="toggle_wifi">Wifi</string>
+    <string name="toggles_desc">Aktifkan matikan (Wi-Fi, Bluetooth, …)</string>
+    <string name="toggles_name">Matikan</string>
+    <string name="toggles_prefix">"Toggle: "</string>
+    <string name="ui_empty_1">Bắt đầu tìm kiếm</string>
+    <string name="ui_empty_1_sub">Các ứng dụng, danh bạ, cài đặt</string>
+    <string name="ui_empty_2">Lịch sử sử dụng</string>
+    <string name="ui_empty_2_sub">Truy cập nhanh</string>
+    <string name="ui_empty_3">Truy cập vào các ứng dụng sử dụng thường xuyên nhanh chóng</string>
+    <string name="ui_empty_3_sub">KISS học hỏi từ thói quen sử dụng</string>
+    <string name="ui_item_contact_hint_call">Gọi</string>
+    <string name="ui_item_contact_hint_message">Nhắn tin</string>
+    <string name="ui_item_phone">Gọi “%s”</string>
+    <string name="ui_item_search">Tìm kiếm “%s”</string>
+    <string name="ui_search_hint">Nhập tên ứng dụng bạn muốn tìm</string>
+    <!-- From: file:/C:/Users/Bao/Desktop/launchers/KISS-master/app/src/main/res/values/themes.xml -->
+    <eat-comment/>
+    <style name="AppThemeDark" parent="BaseThemeDark">
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColor">@color/kiss_text_dark</item>
+        <item name="android:textColorSecondary">#7f7f7f</item>
+
+        <item name="searchColor">@color/kiss_text_dark</item>
+        <item name="resultColor">@color/kiss_text_dark</item>
+        <item name="listBackgroundColor">@color/kiss_list_background_inverse</item>
+        <item name="searchBackgroundColor">@color/kiss_list_background_inverse</item>
+        <item name="dividerDrawable">@drawable/list_separator_dark</item>
+    </style>
+    <style name="AppThemeLight" parent="BaseThemeLight">
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorSecondary">#d3d3d3</item>
+        <item name="android:textColorTertiary">#d3d3d3</item>
+
+        <item name="searchColor">@android:color/black</item>
+        <item name="resultColor">@android:color/black</item>
+        <item name="listBackgroundColor">@android:color/white</item>
+        <item name="searchBackgroundColor">@android:color/white</item>
+        <item name="dividerDrawable">@drawable/list_separator_light</item>
+    </style>
+    <style name="AppThemeSemiTransparent" parent="AppThemeLight">
+        <item name="listBackgroundColor">@color/kiss_background_light_transparent</item>
+    </style>
+    <style name="AppThemeTransparent" parent="AppThemeLight">
+        <item name="resultColor">#f8f8f8</item>
+        <item name="listBackgroundColor">@android:color/transparent</item>
+        <item name="dividerDrawable">@drawable/list_separator_transparent</item>
+    </style>
+    <style name="BaseThemeDark" parent="@android:style/Theme.NoTitleBar"/>
+    <style name="BaseThemeLight" parent="@android:style/Theme.NoTitleBar"/>
+    <style name="SettingTheme" parent="AppThemeLight">
+        <item name="android:windowBackground">@color/kiss_background</item>
+        <item name="android:textColorSecondary">#7f7f7f</item>
+    </style>
+    <style name="SettingThemeDark" parent="AppThemeDark">
+        <item name="android:windowBackground">@color/kiss_list_background_inverse</item>
+    </style>
+</resources>
